@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <main style={{ padding: '2rem' }}>
-      <h1>CVE-2025-66478 Test Application</h1>
+      <h1>CVE-2025-66478 Test Application (Npm)</h1>
       <p>This is a test application for verifying the React2Shell vulnerability.</p>
 
       <div style={{ marginTop: '2rem' }}>
