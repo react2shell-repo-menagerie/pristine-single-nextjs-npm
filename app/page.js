@@ -1,0 +1,27 @@
+export default function Home() {
+  return (
+    <main style={{ padding: '2rem' }}>
+      <h1>CVE-2025-66478 Test Application</h1>
+      <p>This is a test application for verifying the React2Shell vulnerability.</p>
+
+      <div style={{ marginTop: '2rem' }}>
+        <h2>Test Commands:</h2>
+        <ul>
+          <li><code>npm test</code> - Check for vulnerabilities</li>
+          <li><code>npm run fix</code> - Apply security patches</li>
+        </ul>
+      </div>
+
+      <div style={{ marginTop: '2rem' }}>
+        <h3>Package Versions:</h3>
+        <pre style={{ background: '#f0f0f0', padding: '1rem', borderRadius: '4px' }}>
+{JSON.stringify({
+  next: process.env.npm_package_dependencies_next || 'unknown',
+  react: process.env.npm_package_dependencies_react || 'unknown',
+  'react-dom': process.env.npm_package_dependencies_react_dom || 'unknown',
+}, null, 2)}
+        </pre>
+      </div>
+    </main>
+  )
+}
